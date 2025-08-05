@@ -1,24 +1,18 @@
 import React from 'react';
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import LoginScreen from './LoginScreen';
+import InputScreen from './InputScreen';
+import FlashcardScreen from './FlashcardScreen';
 
-function App() {
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload :D.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path = "/" element={<LoginScreen/>} />
+      <Route path = "/input" element={<InputScreen/>} />
+      <Route path = "/flashcard" element={<FlashcardScreen/>} />
+    </Routes>
   );
 }
 
