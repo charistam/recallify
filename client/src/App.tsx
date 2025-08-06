@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import LoginScreen from './LoginScreen';
 import InputScreen from './InputScreen';
 import FlashcardScreen from './FlashcardScreen';
+import { Provider } from "@/components/ui/provider"
 
 
 const App: React.FC = () => {
