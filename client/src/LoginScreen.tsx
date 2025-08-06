@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './LoginScreen.css';
+import { Button, Input, Stack } from "@chakra-ui/react";
+import { PasswordInput } from "./components/ui/password-input";
 
 
 const LoginScreen: React.FC = () => {
@@ -9,10 +11,12 @@ const LoginScreen: React.FC = () => {
             <div className="login-div">
                 <h1 className="title">recallify</h1>
                 <p className="register-option">don't have an account? register here.</p>
-                <div className="textbox">username</div>
-                <div className="textbox">password</div>
+                <Stack gap="15px">
+                    <Input size="lg" w="360px" variant="subtle" placeholder="username" />
+                    <PasswordInput size="lg" w="360px" variant="subtle" placeholder="password" />
+                </Stack>
                 <p className="forgot-password">forgot password?</p>
-                <button>sign in</button>
+                <Button variant="surface" rounded="xl">sign in</Button>
             </div>
             <div className="temp-links">
                 <p><Link to="/input">go to text input screen (temporary!)</Link></p>
