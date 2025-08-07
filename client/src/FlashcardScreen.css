@@ -1,0 +1,15 @@
+.parent-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.temp-links {
+    text-align: right;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    width: 300px;
+}
+

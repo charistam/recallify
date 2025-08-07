@@ -8,7 +8,7 @@ const InputScreen: React.FC = () => {
         <div className="parent-div">
             <Stack direction="column" align="center">
                 <Box w="900px" padding="15px" rounded="xl" bg="#e6f1f5">
-                    <Text textStyle="xl">what would you like to study today? </Text>
+                    <Text color="#4B5358" textStyle="xl">what would you like to study today? </Text>
                 </Box>
                 <Textarea h="320px" placeholder="enter text here (1000 words max)."/>
                 <Button size="lg" rounded="xl" bg="#e6f1f5" w="260px" color="#4B5358">

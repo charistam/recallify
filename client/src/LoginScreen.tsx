@@ -16,7 +16,7 @@ const LoginScreen: React.FC = () => {
                     <PasswordInput size="lg" w="360px" variant="subtle" placeholder="password" />
                 </Stack>
                 <p className="forgot-password">forgot password?</p>
-                <Button variant="surface" rounded="xl">sign in</Button>
+                <Button variant="surface" rounded="xl" bg="#4B5358" color="white">sign in</Button>
             </div>
             <div className="temp-links">
                 <p><Link to="/input">go to text input screen (temporary!)</Link></p>
